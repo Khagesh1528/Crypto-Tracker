@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Coins - Crypto Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <span class="navbar-title">Favorite Coins</span>
+    <a href="index.html" class="nav-item">Home</a>
+    <a href="favorites.html" class="nav-item">Favorite</a>
+    <input type="text" id="search" placeholder="Search for a coin..." class="nav-search">
+  </div>
+
+  <div class="container">
+    <h1>Favorite Coins</h1>
+    <div id="favoriteList">
+      <table id="favoriteCoinsTable">
+        <thead>
+          <tr>
+            <th>Position</th>
+            <th>Icon</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>24h Volume</th>
+            <th>Market Cap</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="coinTableBody">
+          <!-- Favorite coins will be listed here -->
+        </tbody>
+      </table>
+    </div>
+    <div id="coinDetails" class="coin-details" style="display: none;">
+      <!-- Coin details will be displayed here -->
+    </div>
+    <div style="max-width: 600px; margin: 20px auto;">
+      <canvas id="priceChart" style="display: none;"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="favorites.js"></script>
+</body>
+</html>

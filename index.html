@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-Nycaqk7VPphv0W2ejzepzDWp1wdv6+8Rb2EEou5U+sDDhxbmJcF6NzWbDhTzAqSSqNurYi2U8GV6xG1R3GHd3g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+</head>
+<body>
+  <div class="navbar">
+    <span class="navbar-title">Crypto Tracker</span>
+    <a href="index.html" class="nav-item">Home</a>
+    <a href="favorites.html" class="nav-item">Favorite</a>
+    <input type="text" id="search" placeholder="Search for a coin..." class="nav-search">
+  </div>
+
+  <div class="container">
+    <h1>Crypto Tracker</h1>
+    <table id="cryptoTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price <button id="sortPrice">Sort</button></th>
+          <th>Volume <button id="sortVolume">Sort</button></th>
+          <th>Market Cap</th>
+          <th>Favorite</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data will be populated here -->
+      </tbody>
+    </table>
+    <div class="pagination">
+      <!-- Pagination controls will be populated here -->
+    </div>
+    <div id="coinDetails" style="display:none;">
+      <!-- Coin details will be displayed here -->
+    </div>
+    <canvas id="priceChart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
